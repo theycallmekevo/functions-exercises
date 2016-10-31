@@ -1,52 +1,52 @@
-//#1 Build your own concatenation
-function concatenation(phrase1, phrase2){
-  console.log(phrase1 + phrase2);
-  return(phrase1 + phrase2);
-};
-// concatenation("Rainbow", "Unicorns");
+// 1. Build your own concatenation
+function combineWords(word1, word2) {
+    console.log(word1 + word2);
+    return(word1 + word2);
+}
+// combineWords("Rainbow", "Unicorns");
 
-//#2 Repeat a phrase
-function repeatPhrase(word, n){
+// 2. Repeat a phrase
+function repeatPhrase(phrase, n) {
   for (var i = 0; i < n; i++) {
-    console.log(word);
-    return(word);
+    console.log(phrase);
+//     return(phrase)
   }
 };
-// repeatPhrase("Donuts", 5);
+// repeatPhrase("Donuts", 7);
 
-//#3 Build your own Power function
-////////////////////////////////////////// do not understand this solution
+//3. Build your own Power function
 function toTheNthPower(number, power) {
 	var result = 1;
 	for(var i = 0; i < power; i++) {
 		result *= number;
 	}
-	return result;
+	console.log(result);
+	return (result);
 }
-//toTheNthPower(4, 4);
+// toTheNthPower(2, 4);
 
-//#4 Area of a circle
-function circleArea(radius) {
+//Area of a circle: π r2
+function areaOfACircle(radius) {
   var r = (radius * radius);
   var totalArea = (Math.PI * r);
-  console.log(totalArea);
-  return(totalArea);
+  console.log(totalArea.toFixed(2));
+  return(totalArea.toFixed(2));
 }
-// circleArea(10);
+// areaOfACircle(10);
 
-//#5 Pythagorean Theorem
-function pythagoreanTheorem(a, b){
+//Pythagorean Theorem: a2 + b2 = c2
+function pythagoreanTheorem(a, b) {
   var aSquared = (a * a);
   var bSquared = (b * b);
   var cSquared = (aSquared + bSquared);
   var c = Math.sqrt(cSquared);
-  console.log(c);
-  return(c);
+  console.log(c.toFixed(1));
+  return(c.toFixed(1));
 };
-// pythagoreanTheorem(2, 3);
+// pythagoreanTheorem(3, 4);
 
-//#6. Is X Evenly Divisible by Y
-function eventlyDivisible(x, y){
+//Is X Evenly Divisible by Y
+function isXEvenlyDivisibleByY(x, y){
   if (x % y === 0) {
     console.log("true");
     return("true");
@@ -55,7 +55,7 @@ function eventlyDivisible(x, y){
     return("false");
   }
 };
-// eventlyDivisible(4, 2);
+// isXEvenlyDivisibleByY(8, 4);
 
 //#7. Vowel Count
 function countVowels(word) {
