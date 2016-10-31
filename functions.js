@@ -25,7 +25,7 @@ function toTheNthPower(number, power) {
 }
 // toTheNthPower(2, 4);
 
-//Area of a circle: π r2
+//4. Area of a circle: π r2
 function areaOfACircle(radius) {
   var r = (radius * radius);
   var totalArea = (Math.PI * r);
@@ -34,7 +34,7 @@ function areaOfACircle(radius) {
 }
 // areaOfACircle(10);
 
-//Pythagorean Theorem: a2 + b2 = c2
+//5. Pythagorean Theorem: a2 + b2 = c2
 function pythagoreanTheorem(a, b) {
   var aSquared = (a * a);
   var bSquared = (b * b);
@@ -45,7 +45,7 @@ function pythagoreanTheorem(a, b) {
 };
 // pythagoreanTheorem(3, 4);
 
-//Is X Evenly Divisible by Y
+//6. Is X Evenly Divisible by Y
 function isXEvenlyDivisibleByY(x, y){
   if (x % y === 0) {
     console.log("true");
@@ -57,7 +57,7 @@ function isXEvenlyDivisibleByY(x, y){
 };
 // isXEvenlyDivisibleByY(8, 4);
 
-//#7. Vowel Count
+// 7. Vowel Count
 function countVowels(word) {
   var word = word.toLowerCase();
   var counter = 0;
@@ -72,7 +72,7 @@ function countVowels(word) {
 };
 // countVowels("A KeViN TrAn");
 
-//#8. Does the array contain "wdi"
+// 8. Does the array contain "wdi"
 function findWdi(arr){
 	for (var i = 0; i < arr.length; i++) {
 		if(arr[i] === 'wdi'){
@@ -81,16 +81,15 @@ function findWdi(arr){
 	}
 	return false;
 }
-
 // findWdi(["cheese", "bread", "wdi"]);
 
-// #9. Build an ASCII Triangle!
-function triangle(){
+//9. Build an ASCII Triangle!
+function printTriangle(length){
   var ast = [],
   i, j = 5;
-  for (i = 0; i < j; i++) {
+  for (i = 0; i < length; i++) {
     ast[i] = new Array(i + 2).join("*");
     console.log(ast[i]);
   }
 };
-// triangle();
+// printTriangle(5);
